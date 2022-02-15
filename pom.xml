@@ -157,7 +157,7 @@
         <dependency>
             <groupId>com.querydsl</groupId>
             <artifactId>querydsl-mongodb</artifactId>
-            <version>4.3.1</version>
+            <version>5.0.0</version>
         </dependency>
         <dependency>
         <groupId>com.querydsl</groupId>

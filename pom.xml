@@ -57,8 +57,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
         <!-- Axon -->
         <dependency>
             <groupId>org.axonframework</groupId>
@@ -70,7 +68,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+    </dependency>
 		<!-- This will of course be an Axon application. We're adding Kotlin to easily
 		     write command and event classes. -->
 		<dependency>
@@ -83,6 +84,17 @@
 			<artifactId>kotlin-reflect</artifactId>
 		</dependency>
 
+    <!-- JPA Data (We are going to use Repositories, Entities, Hibernate, etc...) -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    <!-- Use MySQL Connector-J -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    <dependencies>
         <!-- Vaadin for the GUI -->
         <dependency>
             <groupId>com.vaadin</groupId>

@@ -77,7 +77,8 @@ public class CardSummaryProjection {
                      .limit(query.getLimit())
                      .collect(Collectors.toList());
     }
-
+    //devo cambiare le cose qui, mongodb lettura mysql scrittura
+//mantieni la sincronia, quando scrivo qualcosa com MySQL deve scrivere anche un nuovo snapshot con mongodb
     @SuppressWarnings("unused")
     @QueryHandler
     public CountCardSummariesResponse handle(CountCardSummariesQuery query) {
